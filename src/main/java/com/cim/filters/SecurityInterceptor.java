@@ -17,7 +17,7 @@ import com.cim.util.Constants;
 @Provider
 public class SecurityInterceptor implements javax.ws.rs.container.ContainerRequestFilter {
 
-	private static final ServerResponse ACCESS_FORBIDDEN = new ServerResponse(Constants.REQUEST_AUTHENTICATION_FAILED, Response.Status.INTERNAL_SERVER_ERROR.getStatusCode(), new Headers<Object>());
+	private static final ServerResponse ACCESS_FORBIDDEN = new ServerResponse(Constants.REQUEST_AUTHENTICATION_FAILED, Response.Status.UNAUTHORIZED.getStatusCode(), new Headers<Object>());
 	
 	public void filter(ContainerRequestContext requestContext)
 			throws IOException {
