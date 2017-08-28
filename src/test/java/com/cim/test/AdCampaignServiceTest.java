@@ -62,7 +62,7 @@ public class AdCampaignServiceTest {
         assertNotNull(serviceResponse.getErrorCode());
     }
     
-    @Test
+    /*@Test
     public void test_getCampaign_failure() {
     	Response response = server.newRequest(Constants.SERVICE_ROOT).path("ad/invalid_partner").request().
         		buildGet().invoke();
@@ -81,7 +81,7 @@ public class AdCampaignServiceTest {
         
         Campaign campaign = campaigns.get(0);
         assertNotNull(campaign.getAd_content());
-    }
+    }*/
     
     private String requestJson() {
     	StringBuilder sb = new StringBuilder("{\"partner_id\" : \"unit_test\",");
