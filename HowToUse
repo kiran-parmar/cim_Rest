@@ -1,0 +1,4 @@
+The URI endpoints available:
+1) Create ad campaign for a partner_id : http://host:port/cim/service/ad
+2) Get campaign for a partner_id : http://host:port/cim/service/ad/{partner_id}
+3) Get all the campaigns : http://host:port/cim/service/adCampaigns
