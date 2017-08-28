@@ -24,3 +24,5 @@ A partner should be able to get their ad data by sending a GET request to the ad
 If the current time is greater than a campaign's creation time + duration, then the server's response should be an error indicating that no active ad campaigns exist for the specified partner.
 
 == Fetch all ad campaigns
+
+**All http requests are authenticated by username and password sent in http request headers. Please see Constants.java file for authentication parameter values.
