@@ -26,3 +26,4 @@ If the current time is greater than a campaign's creation time + duration, then 
 == Fetch all ad campaigns
 
 **All http requests are authenticated by username and password sent in http request headers. Please see Constants.java file for authentication parameter values.
+Please refer HowToUse file for endpoint URIs.
