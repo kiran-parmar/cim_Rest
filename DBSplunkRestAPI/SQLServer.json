@@ -1,0 +1,14 @@
+[{
+		"sourceType": "sys.dm_io_cluster_shared_drives",
+		"group": "Location / Isolation/App Cluster Type",
+		"SQL": "SELECT * FROM sys.dm_io_cluster_shared_drives"
+	}, {
+		"sourceType": "sys.dm_os_cluster_nodes",
+		"group": "Location / Isolation Node within Cluster",
+		"SQL": "SELECT * FROM sys.dm_os_cluster_nodes "
+	}, {
+		"sourceType": "sys.sysprocesses",
+		"group": "Repository/Connections",
+		"SQL": "SELECT DB_NAME(dbid) as DBName, COUNT(dbid) as NumberOfConnections, loginame as LoginName FROM sys.sysprocesses WHERE dbid > 0 GROUP BY dbid, loginame"
+	}
+]
